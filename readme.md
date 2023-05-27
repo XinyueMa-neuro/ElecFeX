@@ -1,6 +1,8 @@
-<img src="./Figures/applogo.png" alt="PVIN model synaptic current stimulation" style="width:60%;height:60%;">
+<div align=center><img src="./Figures/applogo.png" alt="PVIN model synaptic current stimulation" style="width:90%;height:90%;">
+</div>
 
-[![View cengique/pandora-matlab on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/)[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)![GitHub all releases](https://img.shields.io/github/downloads/XinyueMa-neuro/PVIN-model-MaEtAl2023/total)![GitHub followers](https://img.shields.io/github/followers/XinyueMa-neuro?style=social)![GitHub watchers](https://img.shields.io/github/watchers/XinyueMa-neuro/ElecFeX?style=social)![GitHub Repo stars](https://img.shields.io/github/stars/XinyueMa-neuro/ElecFeX?style=social)![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FXinyueMa_neuro) 
+[![View XinyueMa-neuro/ElecFeX on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/130144-elecfex) [![OneDrive](https://img.shields.io/badge/OneDrive-white?style=for-the-badge&logo=Microsoft%20OneDrive&logoColor=0078D4)](https://mcgill-my.sharepoint.com/:f:/g/personal/xinyue_ma_mail_mcgill_ca/EhKPMQ7N5atGvc4yw9JcKGcBTYxrdA4Gc5KHxQ7JAq3j8Q?e=kVDaI1) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) ![GitHub all releases](https://img.shields.io/github/downloads/XinyueMa-neuro/PVIN-model-MaEtAl2023/total) ![GitHub followers](https://img.shields.io/github/followers/XinyueMa-neuro?style=social) ![GitHub watchers](https://img.shields.io/github/watchers/XinyueMa-neuro/ElecFeX?style=social) ![GitHub Repo stars](https://img.shields.io/github/stars/XinyueMa-neuro/ElecFeX?style=social) ![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FXinyueMa_neuro) 
+
 
 
 
@@ -14,7 +16,7 @@ ElecFeX is a MATLAB-based <u>**Elec**</u>trophysiological <u>**Fe**</u>ature e<u
 
   
 
-#### The ElecFeX toolkit includes the following features:
+### The ElecFeX toolkit includes the following features:
 
 - Running on MATLAB or stand-alone
 - Graphical user interface (GUI)
@@ -27,21 +29,22 @@ ElecFeX is a MATLAB-based <u>**Elec**</u>trophysiological <u>**Fe**</u>ature e<u
 
 
 
-#### An overview of ElecFeX’s graphical user interface:
+### An overview of ElecFeX’s graphical user interface:
 
 The graphical user interface (GUI) of ElecFeX is designed to be user-friendly with texts that guide the user through the complete feature extraction workflow. The main GUI window encompasses all the essential elements required for the analysis process, and there is another callable window for advanced settings related to measuring spike properties. The main window of GUI is organized in accordance with the analysis procedures and is divided into six sections including (1) load file, (2) data info, (3) feature extraction, (4) visualization, (5) batch analysis setting, and (6) export results. Detailed instructions regarding installation and implementation of the toolkit can be found on the corresponding GitHub page.
 
-<img src="./Figures/Figure2_Layout.png" alt="GUI" style="width:50%;height:50%;">
+<div align=center><img src="./Figures/Figure2_Layout.png" alt="GUI" style="width:70%;height:70%;"></div>
 
 
 
-#### A summary of customizable methods for six categories of electrophysiological features:
+### A summary of customizable methods for six categories of electrophysiological features:
 
 ElecFeX provides a collection of methods to extract commonly studied electrophysiological features. These methods are equipped with customizable parameters (indicated as white box texts in Figure 3), allowing for flexibility in processing signals with various waveforms. 
 
-<img src="./Figures/Figure3_Method.png" alt="GUI" style="width:50%;height:50%;">
+<div align=center><img src="./Figures/Figure3_Method.png" alt="GUI" style="width:70%;height:70%;"></div>
 
 
+### Credit
 
 If you use ElecFeX, please cite the following publication:
 
@@ -67,6 +70,8 @@ Logo: Xinyue Ma, 2023
 
 ----
 
+<br><br><br>
+
 # <span id="Installation">I. Installation</span>
 
 **Platform compatibility**: windows, macOS, Linux
@@ -77,7 +82,7 @@ We provided two options to install ElecFeX given the accessibility of a licensed
 
 - Standalone desktop application. 
 
-  
+  <br>
 
 ### To install as an add-on package
 
@@ -99,28 +104,30 @@ After completing the above requirements, you can install ElecFeX as an add-on pa
 
 
 
-**To install ElecFeX as an add-on package into MATLAB:**
+**:bulb: To install ElecFeX as an add-on package into MATLAB:**
 
 1. Use the “Download ZIP” option to download the latest version from the Github page and unzip it to a local directory. 
 2. Double-click on the “../Installation/AddIn/ElecFeX.mlappinstall” and a dialog window will appear.
 3. Click “Install” in the opened dialog window and the “ElecFeX” is installed.
 4. Once installed, open the app from the MATLAB Toolbars “Apps”, dropdown and under ‘MY APPS’ click “ElecFeX” and the GUI will appear.
 
-
+<br>
 
 ### To install as a standalone desktop application
 
 A standalone desktop application doesn’t require you to have MATLAB installed in your operating system. 
 
-**To install ElecFeX as a standalone desktop application:**
+**:bulb: To install ElecFeX as a standalone desktop application:**
 
-1. Use the “Download ZIP” option to download the latest version from the Github page and unzip it to a local directory. 
+1. Go to https://mcgill-my.sharepoint.com/:f:/g/personal/xinyue_ma_mail_mcgill_ca/EhKPMQ7N5atGvc4yw9JcKGcBTYxrdA4Gc5KHxQ7JAq3j8Q?e=kVDaI1 to download ElecFeXInstaller.exe. 
 2. Double-click on the “../Installation/Standalone/ElecFeXInstaller.exe” and follow the instruction to installs ElecFeX. 
 3. Once installed, go to the file installed location and find “../application/ElecFeX.exe” to run the application.
 
-
+<br><br><br>
 
 # <span id='Tutorials'>II. Tutorials</span>
+
+Updating...
 
 * [Loading electrophysiological data](tutorials/load_data.md)
 * [Spike dectection](tutorials/spikes_detection.md)
