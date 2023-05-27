@@ -2,6 +2,7 @@
 </div>
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) ![GitHub all releases](https://img.shields.io/github/downloads/XinyueMa-neuro/PVIN-model-MaEtAl2023/total) [![View XinyueMa-neuro/ElecFeX on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/130144-elecfex) [![OneDrive](https://img.shields.io/badge/OneDrive-white?style=for-the-badge&logo=Microsoft%20OneDrive&logoColor=0078D4)](https://mcgill-my.sharepoint.com/:f:/g/personal/xinyue_ma_mail_mcgill_ca/EhKPMQ7N5atGvc4yw9JcKGcBTYxrdA4Gc5KHxQ7JAq3j8Q?e=kVDaI1)
+
 ![GitHub followers](https://img.shields.io/github/followers/XinyueMa-neuro?style=social) ![GitHub watchers](https://img.shields.io/github/watchers/XinyueMa-neuro/ElecFeX?style=social) ![GitHub Repo stars](https://img.shields.io/github/stars/XinyueMa-neuro/ElecFeX?style=social) ![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FXinyueMa_neuro) 
 
 
@@ -11,12 +12,10 @@
 
 ElecFeX is a MATLAB-based <u>**Elec**</u>trophysiological <u>**Fe**</u>ature e<u>**X**</u>traction toolkit for current-clamp recordings. This software was designed to analyze electrophysiological recordings in an intuitive and efficient way so as to be accessible to everyone no matter their level of expertise. This repository provides detailed instructions on the installation and usage of the toolkit.
 
-- [Installation](#Installation)
-
-- [Tutorials](#Tutorials)
+- [Installation](#installation)
+- [Tutorials](#tutorials)
 
   
-
 ### The ElecFeX toolkit includes the following features:
 
 - Running on MATLAB or stand-alone
@@ -34,7 +33,7 @@ ElecFeX is a MATLAB-based <u>**Elec**</u>trophysiological <u>**Fe**</u>ature e<u
 
 The graphical user interface (GUI) of ElecFeX is designed to be user-friendly with texts that guide the user through the complete feature extraction workflow. The main GUI window encompasses all the essential elements required for the analysis process, and there is another callable window for advanced settings related to measuring spike properties. The main window of GUI is organized in accordance with the analysis procedures and is divided into six sections including (1) load file, (2) data info, (3) feature extraction, (4) visualization, (5) batch analysis setting, and (6) export results. Detailed instructions regarding installation and implementation of the toolkit can be found on the corresponding GitHub page.
 
-<div align=center><img src="./Figures/Figure2_Layout.png" alt="GUI" style="width:70%;height:70%;"></div>
+<div align=center><img src="./Figures/Figure2_Layout.png" alt="GUI" style="width:100%;height:100%;"></div>
 
 
 
@@ -42,7 +41,7 @@ The graphical user interface (GUI) of ElecFeX is designed to be user-friendly wi
 
 ElecFeX provides a collection of methods to extract commonly studied electrophysiological features. These methods are equipped with customizable parameters (indicated as white box texts in Figure 3), allowing for flexibility in processing signals with various waveforms. 
 
-<div align=center><img src="./Figures/Figure3_Method.png" alt="GUI" style="width:70%;height:70%;"></div>
+<div align=center><img src="./Figures/Figure3_Method.png" alt="GUI" style="width:100%;height:100%;"></div>
 
 
 ### Credit
@@ -73,7 +72,7 @@ Logo: Xinyue Ma, 2023
 
 <br><br><br>
 
-# <span id="Installation">I. Installation</span>
+# Installation
 
 **Platform compatibility**: windows, macOS, Linux
 
@@ -126,7 +125,7 @@ A standalone desktop application doesn’t require you to have MATLAB installed 
 
 <br><br><br>
 
-# <span id='Tutorials'>II. Tutorials</span>
+# Tutorials
 
 Updating...
 
