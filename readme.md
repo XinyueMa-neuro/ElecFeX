@@ -49,7 +49,7 @@ ElecFeX provides a collection of methods to extract commonly studied electrophys
 
 If you use ElecFeX, please cite the following publication:
 
->Ma, Xinyue, et al. "ElecFeX: A user-friendly and efficient toolkit for feature extraction from electrophysiological data" *bioRxiv* (2023): 2023-05. 
+>Ma, Xinyue, et al. "ElecFeX: A user-friendly and efficient toolkit for feature extraction from electrophysiological data" *bioRxiv* (2023): 2023-05. doi: https://www.biorxiv.org/content/10.1101/2023.05.27.542584v1
 
 In the paper, you can find a neuroscientist-oriented introduction of the toolkit and some examples of using ElecFeX to distinguish neuronal subgroups across nervous systems and across species.
 
@@ -65,7 +65,7 @@ McGill University <br>
 Montreal, QC, H3A 1A1 <br>
 Canada <br>
 
-Special thanks to all the lab members in Anmar Khadra’s lab (https://www.medicine.mcgill.ca/physio/khadralab/) and Reza Sharif-Naeini’s lab (https://www.shariflab.org/) for their test and comments for the development of the toolkit 
+Special thanks to Anmar Khadra’s lab (https://www.medicine.mcgill.ca/physio/khadralab/) and Reza Sharif-Naeini’s lab (https://www.shariflab.org/) for their tests and comments for the development of the toolkit.
 
 Logo: Xinyue Ma, 2023
 
