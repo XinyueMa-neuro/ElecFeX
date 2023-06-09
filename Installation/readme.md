@@ -2,26 +2,30 @@
 
 **Platform compatibility**: windows, Linux, macOS
 
-We provided two options to install ElecFeX given the accessibility of a licensed MATLAB:
-- [<b>Add-on package to MATLAB</b>](#1.1): <!--(##:bulb:-to-install-elecfex-as-a-standalone-desktop-application): -->
-If you have installed or have access to a licensed MATLAB in your system, you can install ElecFeX as an adds-on toolbox into MATLAB. MATLAB R2022a is recommended for the toolbox to achieve the best performance.
+<br>
 
-- [<b>Standalone desktop application</b>](#1.2):<!--(#_:bulb:_to_install_elecfex_as_a_standalone_desktop_application): -->
-You don't need to have MATLAB installed. 
+We provided two options to install ElecFeX given the accessibility of a licensed MATLAB:
+- [<b>Adds-on package to MATLAB</b>](#bulbto-install-elecfex-as-an-adds-on-package-into-matlab): If you have installed or have access to a licensed MATLAB in your system, you can install ElecFeX as an adds-on toolbox into MATLAB. MATLAB R2022a is recommended for the toolbox to achieve the best performance.
+
+- [<b>Standalone desktop application</b>](#bulbto-install-elecfex-as-a-standalone-desktop-application): You don't need to have MATLAB installed. 
 
  <br>
 
 ---
 
-## :bulb: To install ElecFeX as an add-on package into MATLAB<a id='1.1'></a>
+## :bulb:To install ElecFeX as an adds-on package into MATLAB 
 
 **Requirements**: MATLAB R2022a (recommended version), Signal Processing toolbox, Curve Fitting toolbox.
 
-### Before the installation...
+### :arrow_forward:Before the installation...
 
-*If you don’t have MATLAB installed.* To install MATLAB R2022a, go to https://www.mathworks.com/downloads/, select and download release “R2022a”. Next, double-click on “setup.exe” and follow the installation steps. In the “PRODUCTS” selection window, check at least the “Signal Processing toolbox” and the “Curve Fitting toolbox”. 
+:grey_question:*If you don’t have MATLAB installed.* 
 
-*If you have installed MATLAB.* Check if the required toolboxes are installed. You can check them by:
+To install MATLAB R2022a, go to https://www.mathworks.com/downloads/, select and download release “R2022a”. Next, double-click on “setup.exe” and follow the installation steps. In the “PRODUCTS” selection window, check at least the “Signal Processing toolbox” and the “Curve Fitting toolbox”. 
+
+:grey_question:*If you have installed MATLAB.* 
+
+Check if the required toolboxes are installed. You can check them by:
 
 - In the Command windows, type in *ver*, and it will display all the packages you have installed
 
@@ -29,11 +33,13 @@ OR
 
 - In the Toolbar, go to “Home” panel and select “Add-ons”-“Manage Add-Ons” and it will display all the packages you have installed. 
 
-*If the required toolboxes are not installed.* Go to “Home” panel and select “Add-ons”-“Get Add-ons” where you can search and install them.
+:grey_question:*If the required toolboxes are not installed.* 
+
+Go to “Home” panel and select “Add-ons”-“Get Add-ons” where you can search and install them.
 
 After completing the above requirements, you can install ElecFeX as an add-on package into MATLAB.
 
-### Installation
+### :arrow_forward:Installation steps
 
 **For Windows users:**
 
@@ -52,10 +58,11 @@ After completing the above requirements, you can install ElecFeX as an add-on pa
 
 ---
 
-## :bulb: To install ElecFeX as a standalone desktop application<a id='1.2'></a>
+## :bulb:To install ElecFeX as a standalone desktop application
 
 A standalone desktop application doesn’t require you to have MATLAB installed in your operating system. 
 
+### :arrow_forward: Installation steps
 **For Windows users:**
 
 1. Go to https://mcgill-my.sharepoint.com/:f:/g/personal/xinyue_ma_mail_mcgill_ca/EhKPMQ7N5atGvc4yw9JcKGcBTYxrdA4Gc5KHxQ7JAq3j8Q?e=kVDaI1 to download ElecFeXInstaller.exe. 
