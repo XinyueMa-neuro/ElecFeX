@@ -3,16 +3,17 @@
 **Platform compatibility**: windows, Linux, macOS
 
 We provided two options to install ElecFeX given the accessibility of a licensed MATLAB:
+- [<b>Add-on package to MATLAB</b>](#1.1): <!--(##:bulb:-to-install-elecfex-as-a-standalone-desktop-application): -->
+If you have installed or have access to a licensed MATLAB in your system, you can install ElecFeX as an adds-on toolbox into MATLAB. MATLAB R2022a is recommended for the toolbox to achieve the best performance.
 
-- [<b>Add-on package to MATLAB</b>](
-##_:bulb:_To_install_ElecFeX_as_a_standalone_desktop_application): If you have installed or have access to a licensed MATLAB in your system, you can install ElecFeX as an adds-on toolbox into MATLAB. MATLAB R2022a is recommended for the toolbox to achieve the best performance.
-
-- [<b>Standalone desktop application</b>](##_:bulb:_To_install_ElecFeX_as_a_standalone_desktop_application): You don't need to have MATLAB installed. 
+- [<b>Standalone desktop application</b>](#1.2):<!--(#_:bulb:_to_install_elecfex_as_a_standalone_desktop_application): -->
+You don't need to have MATLAB installed. 
 
  <br>
 
+---
 
-## :bulb: To install ElecFeX as an add-on package into MATLAB
+## :bulb: To install ElecFeX as an add-on package into MATLAB<a id='1.1'></a>
 
 **Requirements**: MATLAB R2022a (recommended version), Signal Processing toolbox, Curve Fitting toolbox.
 
@@ -49,7 +50,9 @@ After completing the above requirements, you can install ElecFeX as an add-on pa
 
 <br>
 
-## :bulb: To install ElecFeX as a standalone desktop application
+---
+
+## :bulb: To install ElecFeX as a standalone desktop application<a id='1.2'></a>
 
 A standalone desktop application doesn’t require you to have MATLAB installed in your operating system. 
 
@@ -65,9 +68,13 @@ A standalone desktop application doesn’t require you to have MATLAB installed 
 1. Go to https://mcgill-my.sharepoint.com/:f:/g/personal/xinyue_ma_mail_mcgill_ca/EhKPMQ7N5atGvc4yw9JcKGcBTYxrdA4Gc5KHxQ7JAq3j8Q?e=kVDaI1 to download ElecFeXInstaller.exe. 
 2. In the terminal, type: `sudo -H ./ElecFeXInstaller.install`
 > You may need to allow the root user to access the running X server:
+> 
 >	`xhost +SI:localuser:root`
+>	
 >	`sudo -H ./install`
+>	
 >	`xhost -SI:localuser:root`
+>	
 > sudo is only required if you install to a directory that you do not have write access to.
 
 
