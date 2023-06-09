@@ -7,7 +7,7 @@
 
 
 - [What is ElecFeX?](#What_is_ElecFeX?)
-- [Installation](installation/readme.md)
+- [Installation](Installation/readme.md)
 - [Tutorials](Tutorials/readme.md)
 
 
