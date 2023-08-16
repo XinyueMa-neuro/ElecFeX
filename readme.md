@@ -9,7 +9,13 @@
 - [What is ElecFeX?](#What_is_ElecFeX?)
 - [Installation](Installation/readme.md)
 - [Tutorials](Tutorials/readme.md)
+---
 
+If you find ElecFeX helpful, buy the developer a cup of coffee :coffee:
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?business=CP7CFSMFTQP6C&no_recurring=1&item_name=If+ElecFeX+is+helpful+to+you%2C+buy+the+developer+a+cup+of+coffee%F0%9F%98%8A.&currency_code=CAD).
+
+---
 
 # What is ElecFeX?
 
@@ -17,15 +23,14 @@ ElecFeX is a MATLAB-based <u>**Elec**</u>trophysiological <u>**Fe**</u>ature e<u
 
 ### The ElecFeX toolkit includes the following features:
 
-- Running on MATLAB or stand-alone
 - Graphical user interface (GUI)
-- No programming required
-- pClamp data file format (ABF) importing
+- Running on MATLAB or stand-alone
+- No coding/programming required
+- pClamp data file format (ABF), igor Pro (IBW), and Neurodata Without Borders (NWB) supported
 - Customizable methods for a wide range of electrophysiological features
-- Multiple file processing
+- Multiple file processing 
 - Formatted output for further analysis such as statistical analysis and clustering
 - Interactive visualization 
-
 
 ### An overview of ElecFeX’s graphical user interface:
 
