@@ -5,7 +5,7 @@ This tutorial is an introduction that guides you through the steps of using Elec
 The ElecFeX Tutorial is split into four parts, covering each four panels of the main window of ElecFeX:
 
 * [Import and select data files](load_data.md)
-* [Extract electrophysiological properties](extract_features.md)
+* [Extract electrophysiological properties](extract_feature.md)
 * [Batch analysis setting](batch_analysis.md)
 * [Export data analysis](export_result.md)
 
