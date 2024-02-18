@@ -176,9 +176,9 @@ If the baseline is NOT specified, $\geq 2$ hyperpolarizing sweeps are required f
 
 > :bulb:<b>How the membrane time constant and capacitance is estimated?</b> <br>
 > The equation describing the membrane voltage V in response to a hyperpolarizing current injection I<sub>app</sub>
-><center><img src=https://latex.codecogs.com/svg.image?&space;C\frac{dV}{dt}=I_{app}-\frac{(V-E)}{R_m}></center>
+><center><img src=https://latex.codecogs.com/svg.image?&space;C\frac{dV}{dt}=I_{app}-\frac{(V-E)}{R_m}></center><br>
 > Assume the initial condition is at the resting steady state (V=E), the temporal solution of the voltage is
-><center><img src=https://latex.codecogs.com/svg.image?V=exp[\frac{-t}{C\cdot&space;R_m}]&plus;(I_{app}-\frac{E}{R_m})t/C_m&plus;(E-1)></center>
+><center><img src=https://latex.codecogs.com/svg.image?V=exp[\frac{-t}{C\cdot&space;R_m}]&plus;(I_{app}-\frac{E}{R_m})t/C_m&plus;(E-1)></center><br>
 >and the time constant of the voltage &tau;=C&times;R<sub>m</sub>, where C is the membrane conductance and R<sub>m</sub> is the membrane input resistance. Notice that these values are independent to the value of injected current.
 
 
