@@ -1,9 +1,5 @@
-<p style="text-align:left;">
-    Previous: <a href=extract_feature.md>2. extract electrical properties</a>
-    <span style="float:right;">
-    Next: <a href=export_result.md>4. Export results</a>
-    </span>
-</p>
+
+Previous: [2. Extract electrical properties](extract_feature.md)
 
 ---
 
@@ -11,7 +7,6 @@
 
 <div align=center><img src="./Figures/gif_flycat.gif" alt="" style="width:1300px;height:170px;margin:0px 0px 0px -10px"></div>
 
-<img style="float: left; width:10%;margin:0px 10px 0px -30px" src="./Figures/gif_liecat.gif">
 
 This page describes how to perform the batch analysis in ElecFeX. Here you can specify the electrical properties to be measured from which sweep(s) and which spike(s) from the selected files.
 
@@ -31,10 +26,5 @@ Settings in batch analysis, such as “sweep#” and “spike#”, also don’t 
 
 ---
 
-<p style="text-align:left;">
-    Previous: <a href=extract_feature.md>2. extract electrical properties</a>
-    <span style="float:right;">
-    Next: <a href=export_result.md>4. Export results</a>
-    </span>
-</p>
+Next: [4. Export results](export_result.md)
 

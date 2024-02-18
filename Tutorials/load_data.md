@@ -1,9 +1,11 @@
-<p style="text-align:left;">
+<!-- <p style="text-align:left;">
     Previous: <a href=readme.md>Tutorials</a>
     <span style="float:right;">
         Next: <a href=extract_feature.md>2. Extract electrical properties</a>
     </span>
-</p>
+</p> -->
+
+Previous: [Tutorials](readme.md)
 
 ---
 
@@ -14,8 +16,6 @@
 <div align=center><img src="./Figures/gif_flycat.gif" alt="" style="width:800px;height:170px"></div>
 
 <br>
-
-<img style="float: left; width:10%;margin:0px 10px 0px -30px" src="./Figures/gif_liecat.gif">
 
 Importing your data is the first step to get started with ElecFeX. This page guides you through loading the data files, including **Axon Binary File (ABF)**, **Igor Binary Wave (IBW)**, and **Neurodata Without Borders (NWB)**, and save your settings.
 
@@ -31,12 +31,15 @@ Importing your data is the first step to get started with ElecFeX. This page gui
 
 ---
 
+Next: [2. Extract electrical properties](extract_feature.md)
+<!--
 <p style="text-align:left;">
     Previous: <a href=readme.md>Tutorials</a>
     <span style="float:right;">
         Next: <a href=extract_feature.md>2. Extract electrical properties</a>
     </span>
 </p>
+-->
 
 
 <!-- <div align=center>

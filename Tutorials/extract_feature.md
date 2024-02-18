@@ -1,27 +1,5 @@
-<style>
-.tipbox {
-   background-color: rgb(253,253,210);
-   padding: 5px 15px 5px 15px;
-   margin: 0px 10px 10px 20px;
-   border:5px outset rgb(253,253,220, 0.1);
-}
 
-.parbox {
-   background-color: rgb(233,220,250);
-   padding: 5px 15px 5px 15px;
-   margin: -15px 20px 10px 20px;
-   border:5px outset rgb(243,240,250, 0.1);
-}
-
-</style>
-
-
-<p style="text-align:left;">
-    Previous: <a href=load_data.md>1. Load data files</a>
-    <span style="float:right;">
-      Next: <a href=batch_analysis.md>3. Batch analysis</a>
-    </span>
-</p>
+Previous: [1. Load data files](load_data.md)
 
 ---
 
@@ -29,32 +7,26 @@
 
 <div align=center><img src="./Figures/gif_flycat.gif" alt="" style="width:1300px;height:170px;margin:0px 0px 0px -10px"></div>
 
-<!-- <div align=center><img src="./Figures/gif_flycat.gif" alt="" style="width:40%;"></div> -->
-
-<img style="float: left; width:10%;margin:0px 10px 0px -30px" src="./Figures/gif_liecat.gif">
 
 This page guides you through the electrical properties measurements in the `extract electrophysiological properties` panel, where you can read, process, and visualize the selected recordings in a file-by-file manner. 
 
 :bulb: Settings in white boxes; results in grey boxes.
+
 :bulb: In ElecFeX, get your tips by moving the cursor to the text.
 
-<!-- <p style="text-align: center;">- :bulb: Settings are in white boxes and results are in grey boxes. -</p> 
 
-<p style="text-align: center;">- :bulb: In ElecFeX, you can get tips of the electrical features by moving the cursor to their text. -</p> -->
-
-
-[2.1. Data Info](#21-data-info) 
-[2.2. Input Resistance](#22-input-resistance)
-[2.3. Amplitude & Area](#23-amplitude--area)
-[2.4. Spike Detection](#24-spike-detection)
-&emsp;  [2.4.1 ADC steady state](#241-adc-steady-state)
-&emsp;   [2.4.2 For the hyperpolarizing sweep](#242-for-the-hyperpolarizing-sweep)
-&emsp;   [2.4.3 Spike detection](#243-spike-detection)
-[2.5. Spike Properties](#25-spike-properties)
-[2.6. Visualization](#26-visualization)
+[2.1 - Data Info](#21-data-info) <br>
+[2.2 - Input Resistance](#22-input-resistance)  <br>
+[2.3 - Amplitude & Area](#23-amplitude--area) <br>
+[2.4 - Spike Detection](#24-spike-detection)  <br>
+&emsp;  [2.4.1 - ADC steady state](#241-adc-steady-state)  <br>
+&emsp;   [2.4.2 - For the hyperpolarizing sweep](#242-for-the-hyperpolarizing-sweep) <br>
+&emsp;   [2.4.3 - Spike detection](#243-spike-detection) <br>
+[2.5 - Spike Properties](#25-spike-properties) <br>
+[2.6 - Visualization](#26-visualization) <br>
 
 ---
-## 2.1. Data Info
+## 2.1 Data Info
 
 The first subpanel contains basic information in the file. 
 
@@ -62,7 +34,8 @@ The first subpanel contains basic information in the file.
 
 1. **”Select one file” dropdown box.** It contains a list of selected file. Specify one file to read and visualize.
 
-<div class=tipbox>The first time loading a NWB file, a warning dialog may appear and request you to modify the configuration of the NWB file. See <a href='#NWBconfig'>NWB config</a>. </div>
+>:bulb:<br>
+>The first time loading a NWB file, a warning dialog may appear and request you to modify the configuration of the NWB file. See <a href='#NWBconfig'>NWB config</a>. 
 
 2. **“ADC channel (acquisition)” and “DAC channel (acquisition)” dropdown box.** Select the channel of ADC and DAC signals to read. 
    + ADC channels record signals from the cells and DAC channels are the digital signal  applied to the cells. E.g., in a current clamp recording, ADC channels are the recorded voltage response and DAC channels are the applied current stimuli.
@@ -84,19 +57,17 @@ The first subpanel contains basic information in the file.
 6. **ADC dataunit.** The unit of ADC (acquisition) signal.
 7. **DAC dataunit.** The unit of DAC (stimulus) signal.
 
-
-<div class='tipbox'>
-Following the data loading, the unit of each electrical features are also updated and displayed as combination of the `ADC dataunit` (i.e., acquisition unit, or AU) and the `DAC dataunit` (i.e., stimulus unit, or SU). For instance:
-   <li> the unit of <code>input resistance</code>. is shown as AU/SU; </li>
-   <li> the unit of <code>estimated capacitance</code> is shown as the SU/AU*msec.</li>
-   <li> the unit of <code>area</code> is shown as AU*msec.</li>
-<br>
-Users may transform these unit combinations into their commen forms:
-   <li> volt/amp = &#937; </li>
-   <li> amp/volt*sec = F</li>
-<br>
-Following batch analysis, the ADC dataunit and DAC dataunits for each file are provided in the result table. The table row names (or column names) showing the name of electrical features also include units in the form of a combination of AU and SU.
-</div>
+>:bulb:<br>
+> Following the data loading, the unit of each electrical features are also updated and displayed as combination of the `ADC dataunit` (i.e., acquisition unit, or AU) and the `DAC dataunit` (i.e., stimulus unit, or SU). For instance:
+> + the unit of <code>input resistance</code>. is shown as AU/SU; 
+> + the unit of <code>estimated capacitance</code> is shown as the SU/AU*msec.
+> + the unit of <code>area</code> is shown as AU*msec. <br>
+>
+> Users may transform these unit combinations into their commen forms:
+> + volt/amp = &#937;
+> + amp/volt*sec = F
+>
+> Following batch analysis, the ADC dataunit and DAC dataunits for each file are provided in the result table. The table row names (or column names) showing the name of electrical features also include units in the form of a combination of AU and SU.
 
 8. <span id='NWBconfig'>**NWB config.**</span> Click the `NWB config` button and a dialog will open. Here, users need to specify the configuration of their NWB files, including the locations for the data, dataunit, protocol names, sampling rates, acquisition modes, and the sweep numbers of the acquisition and the stimulus.
 
@@ -105,11 +76,10 @@ Following batch analysis, the ADC dataunit and DAC dataunits for each file are p
 + **Step 1: NWB File viewer.** This panel load the NWB file you choose in the main panel. It expands the structure of the NWB file (see [Intro to NWB](https://nwb-overview.readthedocs.io/en/latest/intro_to_nwb/1_intro_to_nwb.html) for details). Click the node,  its path, value, and visualization (if it is a dataset) will be display at the lower panel.
 + **Step 2: Specify paths of multiple data information for loading the NWB file.** Several data information to be loaded are required to have their paths specify. Use the right-arrow buttons to add the path and the attribute name. 
    + A NWB file usually contains groups named "acquisition" and "stimulus". Use the button groups to determine whether the protocol name, sampling rate, and the acquisition mode is read from the acquisition group or the stimulus group.
-   + Next, for both acquisition and stimulus, use the rightarrow buttons to specify the path and attribute name (if any) for the data, unit, protocol name, sampling rate, acquisition mode, and sweep number.
+   + Next, for both acquisition and stimulus, use the rightarrow buttons to specify the path and attribute name (if any) for the data, unit, protocol name, sampling rate, acquisition mode, and sweep number. <br>
 
-   <div class='tipbox'>
-   You CANNOT keyboard-edit the "path" and "attribute name" textbox. Only use the button to change their values. When more than 1 value is in an attribute, you CAN keyboard-edit the index value to specify the which attribute value to read.    
-   </div>
+      >:bulb:<br>
+      >You CANNOT keyboard-edit the "path" and "attribute name" textbox. Only use the button to change their values. When more than 1 value is in an attribute, you CAN keyboard-edit the index value to specify the which attribute value to read.    
       
    + Usually the sweep number is embedded in a string. Keyboard-edit the prefix and the suffix to extract sweep numbers from the string. For instance, sweep numbers in the example figure is embedded in the subgroup name "data_XXXXX_AD0" for the acquisition group. To get the sweep number, type-in the prefix ""data_" and the suffix '_AD0'.
 
@@ -117,7 +87,7 @@ Following batch analysis, the ADC dataunit and DAC dataunits for each file are p
 
 ## 2.2. Input Resistance
 
-<img style="float: right; width:40%;margin:0px 20px 20px 20px" src="./Figures/Figure3_Method_InputResistance.png">
+<div align='center'><img style="width:40%;margin:0px 20px 20px 20px" src="./Figures/Figure3_Method_InputResistance.png"></div>
 
 **Input resistance.** Input resistance is defined as the slope of a linear fit of the voltage against the hyperpolarizing current. It provides as a readout of the pipete seal quality, the conductance of the ion channels at the resting state, and how much the membrane potential can depolarize in response to a stimulation. 
 
@@ -131,36 +101,30 @@ If the baseline is NOT specified, $\geq 2$ hyperpolarizing sweeps are required f
 **Setting.** To measure the input resistance, you need to specify the parameter settings below:
 
 1. **Hyperpolarizing sweeps #.** The sweep range indexes. For measuring the input resistance, specify the index range for hyperpolarizing step currents.
-<div class='parbox'>
-   <li> [left box] and [right box] must be positive integer </li>
-   <li> [left box] must be smaller than or equal to [right box] </li>
-</div>
+   > + [left box] and [right box] must be positive integer
+   > + [left box] must be smaller than or equal to [right box]
 
 2. **Baseline time interval (optional)**. It specifies the time interval of the baseline of ADC and DAC signals. The baseline is where DAC is zero and ADC is at resting state. The baseline value will be corrected from the ROI values. If the parameter is not specified here, the baseline value is assumed to be 0; otherwise, the baseline value is measured as the average in-between the specified baseline time interval.
-<div class='parbox'>
-   <li> [left box] and [right box] must be positive and within the range of sweep duration</li>
-   <li> [left box] must be smaller than or equal to [right box] </li>
-</div>
+
+   > + [left box] and [right box] must be positive and within the range of sweep duration
+   > + [left box] must be smaller than or equal to [right box]
 
 3. **ROI time interval**. It specifies the time interval to sample the ADC and DAC signals for linear fitting.
-<div class='parbox'>
-   <li> [left box] and [right box] must be positive and within the range of sweep duration</li>
-   <li> [left box] must be smaller than or equal to [right box] </li>
-</div>
+
+   > + [left box] and [right box] must be positive and within the range of sweep duration
+   > + [left box] must be smaller than or equal to [right box]
 
 4. **min(ROI) v.s. mean(ROI).** Click the button to determine whether to get the minimal value or the mean value of the ADC and DAC signals within the ROI time interval.
-<div class='parbox'>
-   <li> Choose "min(ROI)" when sampling from the initial voltage peak. This is to exclude the effect of <a href='#Ih'>hyperpolarization-activated current</a>. </li>
-   <li> Choose "mean(ROI)" when sampling from the voltage steady state. </li>
-</div>
 
+> + Choose "min(ROI)" when sampling from the initial voltage peak. This is to exclude the effect of [hyperpolarization-activated current](#Ih). 
+> + Choose "mean(ROI)" when sampling from the voltage steady state. 
 
-<div align='center'><img style="width:90%;margin:0px 20px 20px 20px" src="./Figures/method_InputResistance_edit.gif"></div>
+<div align='center'><img style="width:90%;margin:0px 20px 20px 20px;" src="./Figures/method_InputResistance_edit.gif"></div>
 
 
 ## 2.3. Amplitude & Area
 
-<img style="float: right; width:55%;margin:0px 20px 20px 20px" src="./Figures/Figure3_Method_AmpArea.png" alt="Method_AmpArea" style="width:50%;height:50%;">
+<div align='center'><img style="width:55%;margin:0px 20px 20px 20px" src="./Figures/Figure3_Method_AmpArea.png" alt="Method_AmpArea" style="width:50%;height:50%;"></div>
 
 **Amplitude & Area.** Many electrical features are quantified by their amplitude and area, e.g., **voltage sag** and **after-hyperpolarization potential (AHP)**. Voltage sag is the voltage deflection from the steady state to the peak in response to a hyperpolarizing current. It is an indicator of hyperpolarization-activated current $I_h$. AHP is the hyperpolarized voltage change after the excitation. It is classified into slow, medium, and fast based on their time decay rate <sup>[1,2,3](#Reference)</sup> and is indicator to many ion channels' activity, e.g., the calcium-activated potassium channels<sup>[4](#Reference)</sup>.
 
@@ -169,19 +133,15 @@ If the baseline is NOT specified, $\geq 2$ hyperpolarizing sweeps are required f
 
 **Setting.** To measure the amplitude and the area, you need to specify several parameter settings (in the white textboxes):
 
-1. **Baseline time interval (optional)**. It specifies the time interval of the baseline (or offset) ADC signal to be removed from the ROI signal. These two boxes are optional to set. If specified, the baseline value is the average in between the specified baseline time interval; otherwise, the default baseline value is 0. 
+1. **Baseline time interval (optional)**. It specifies the time interval of the baseline (or offset) ADC signal to be removed from the ROI signal. These two boxes are optional to set. If specified, the baseline value is the average in between the specified baseline time interval; otherwise, the default baseline value is 0.
 
-<div class='parbox'>
-   <li> [left box] and [right box] must be positive and within the range of sweep duration</li>
-   <li> [left box] must be smaller than or equal to [right box] </li>
-</div>
+   > + [left box] and [right box] must be positive and within the range of sweep duration
+   > + [left box] must be smaller than or equal to [right box]
 
 2. **ROI time interval**. It specifies the time interval of ADC signal to measure the amplitude and area. The ROI signal is in between the specified ROI time interval. 
-<div class='parbox'>
-   <li> [left box] and [right box] must be positive and within the range of sweep duration</li>
-   <li> [left box] must be smaller than or equal to [right box] </li>
-</div>
 
+   > + [left box] and [right box] must be positive and within the range of sweep duration
+   > + [left box] must be smaller than or equal to [right box]
 
 <div align='center'><img style="width:90%;margin:0px 20px 20px 20px" src="./Figures/method_AmpArea_edit.gif"></div>
 
@@ -189,17 +149,16 @@ If the baseline is NOT specified, $\geq 2$ hyperpolarizing sweeps are required f
 
 **Measurement.** Several measurements on specified sweep and within specified time interval of the recording is performed, including:
 
-[2.4.1 ADC steady state](#241-adc-steady-state)
-[2.4.2 For the hyperpolarizing sweep](#242-for-the-hyperpolarizing-sweep)
-[2.4.3 Spike detection](#243-spike-detection)
+[2.4.1 ADC steady state](#241-adc-steady-state) <br>
+[2.4.2 For the hyperpolarizing sweep](#242-for-the-hyperpolarizing-sweep) <br>
+[2.4.3 Spike detection](#243-spike-detection) <br>
 
 **Setting.** Here you need to specify the `sweep#` and the time interval `cursor 1` and `cursor 2`.
 
 1. **Cursor 1 (s) and Cursor 2 (s)**.The time interval to perform the measurements. In the visualization panel, the signals outside the cursors are plotted in <span style="color:gray">gray</span>.
-<div class='parbox'>
-   <li> [left box] and [right box] must be positive and within the range of sweep duration</li>
-   <li> [left box] must be smaller than or equal to [right box] </li>
-</div>
+
+   > + [left box] and [right box] must be positive and within the range of sweep duration
+   > + [left box] must be smaller than or equal to [right box]
 
 2. **Sweep#**. The specific sweep of the ADC signal to perform the measurements. In the visualization panel, the signals of specified sweep is plotted in <span style="color:red">red</span> while other sweeps are in black.
 
@@ -213,32 +172,28 @@ If the baseline is NOT specified, $\geq 2$ hyperpolarizing sweeps are required f
 
 ### 2.4.2 For the hyperpolarizing sweep
 
-**Measurement.** This method estimates the membrane constant and the membrane capacitance from the hyperpolarizing step sweep. It fits the hyperpolaring voltage to a single exponential equation $y=a\cdot exp(x/\tau)$ where the exponential decay constant was estimated as the **membrane time constant ($\tau$)**.  If the input resistance $R_m$ is set and measured in [2.2. Input Resistance](#22-Input-Resistance), the **membrane capacitance** $C_m$ is estimated as $C_m=\frac{\tau}{R_m}$.
+**Measurement.** This method estimates the membrane constant and the membrane capacitance from the hyperpolarizing step sweep. It fits the hyperpolaring voltage to a single exponential equation $y=a\cdot exp(x/\tau)$ where the exponential decay constant was estimated as the **membrane time constant ($\tau$)**.  If the input resistance $R_m$ is set and measured in [2.2. Input Resistance](#22-input-resistance), the **membrane capacitance** $C_m$ is estimated as $C_m=\frac{\tau}{R_m}$.
 
-<div class='tipbox'>
-<center><b>How the membrane time constant and capacitance is estimated?</b> </center>
-The equation describing the membrane voltage V in response to a hyperpolarizing current injection I<sub>app</sub>
-<center><img src=https://latex.codecogs.com/svg.image?&space;C\frac{dV}{dt}=I_{app}-\frac{(V-E)}{R_m}></center>
-Assume the initial condition is at the resting steady state (V=E), the temporal solution of the voltage is
-<center><img src=https://latex.codecogs.com/svg.image?V=exp[\frac{-t}{C\cdot&space;R_m}]&plus;(I_{app}-\frac{E}{R_m})t/C_m&plus;(E-1)></center>
-and the time constant of the voltage &tau;=C&times;R<sub>m</sub>, where C is the membrane conductance and R<sub>m</sub> is the membrane input resistance. Notice that these values are independent to the value of injected current.
-</div>
+> :bulb:<b>How the membrane time constant and capacitance is estimated?</b> <br>
+> The equation describing the membrane voltage V in response to a hyperpolarizing current injection I<sub>app</sub>
+><center><img src=https://latex.codecogs.com/svg.image?&space;C\frac{dV}{dt}=I_{app}-\frac{(V-E)}{R_m}></center>
+> Assume the initial condition is at the resting steady state (V=E), the temporal solution of the voltage is
+><center><img src=https://latex.codecogs.com/svg.image?V=exp[\frac{-t}{C\cdot&space;R_m}]&plus;(I_{app}-\frac{E}{R_m})t/C_m&plus;(E-1)></center>
+>and the time constant of the voltage &tau;=C&times;R<sub>m</sub>, where C is the membrane conductance and R<sub>m</sub> is the membrane input resistance. Notice that these values are independent to the value of injected current.
+
 
 **Setting.** To measure the membrane constant and capacitance, you need to specify:
 
 1. **Time interval (s).** It specifies the time interval from when the voltage starts to hyperpolarize to when the voltage reaches the steady state. 
-<div class='parbox'>
-   <li> [left box] and [right box] must be positive and within the range of sweep duration</li>
-   <li> [left box] must be smaller than or equal to [right box] </li>
-</div>
 
-
+   > + [left box] and [right box] must be positive and within the range of sweep duration
+   > + [left box] must be smaller than or equal to [right box]
 
 ### 2.4.3 Spike detection
 
 **Measurement.** This panel detects spikes of ADC signals between the cursors and quantify the time series of the spike train. 
 
-<div align=center><img src="./Figures/Figure3_Method_SpikeDetection.png" alt="Method_AmpArea" style="width:100%;height:100%;"></div>
+<div align='center'><img src="./Figures/Figure3_Method_SpikeDetection.png" alt="Method_AmpArea" style="width:100%;height:100%;"></div>
 
 **Setting.** Spike detection in ElecFeX relies on the MATLAB built-in function `findpeaks()` from the *Signal Processing Toolbox*. The definitions of the parameters are consistent to those described in the [Mathwork-findpeak()](https://www.mathworks.com/help/signal/ref/findpeaks.html). To be specific, you need to specify the parameter settings in the white textboxes and checkboxes as introduced below:
 
@@ -253,8 +208,7 @@ There are another two checkboxes for the visualization:
 1. **Plot one sweep only checkbox**. If checked, only the sweep specified by “Sweep #” spinner box will be plotted while signals of other sweeps are hidden.
 2. **Plot Frequency (Hz) v.s. Time (s) checkbox**. If checked, instantaneous firing frequencies and their single exponential fitting curve is plotted in the visualization. This checkbox is only accessible when more than 3 spikes are detected.
 
-
-<div align='center'><img style="width:90%;margin:0px 20px 20px 20px" src="./Figures/method_SpikeDetection_edit.gif"></div>
+<img style="width:90%;margin:0px 20px 20px 20px" src="./Figures/method_SpikeDetection_edit.gif">
 
 **Spike train properties.** In the visualization panel, the detected spikes are marked by <span style="color:green">green</span> circles. The spike trains properties include:
 
@@ -272,7 +226,7 @@ There are another two checkboxes for the visualization:
 
 **Setting.** The spike detection will be performed between the cursors but for all the sweeps. To select the estimation method, move your cursor to the `rheobase` gray text box and right-click, an option window will appear.
 
-<div align=center><img src="./Figures/Figure3_Method_Rheobase.png" alt="Method_Rheobase" style="width:100%;height:100%;"></div>
+<img src="./Figures/Figure3_Method_Rheobase.png" alt="Method_Rheobase" style="width:100%;height:100%;">
 
 1. **The minimal applied current eliciting a spike $est_{min}$**. This method estimates the rheobase as the minimal applied current in your protocol that elicits at least one spike. It is appliable when you used a step current protocol of (1) small step size, (2) current that does not trigger firing (i.e., possibly lower than the rheobase). 
 
@@ -280,10 +234,9 @@ There are another two checkboxes for the visualization:
 
 3. **The predicted sweep that generates consecitive increased first-spike time latency $est_{\Delta latency}$.** the time difference between the first spikes of each adjacent current steps were plotted against the sweep number and was fitted to a single exponential function. From this fitted exponential curve, the time delay of the first spike of the next smaller current step, i.e., the estimated rheobase step, was obtained. The value of the estimated rheobase step was then derived from the curve of a power function fitted to the plot of time latencies of the first spikes against their step currents. This method requires $\geq 4$ spiking step-current sweeps that are equally stepped.
 
-
 <div align='center'><img style="width:90%;margin:0px 20px 20px 20px" src="./Figures/method_Rheobase_edit.gif"></div>
 
-## 2.5. Spike Properties
+## 2.5 Spike Properties
 
 **Measurement.** The properties of single spike specified by the “Spike#” spinner box.
 
@@ -295,7 +248,7 @@ There are another two checkboxes for the visualization:
 
 **Spike properties.** ElecFeX provides many customizable measurements on the spike shape, including:
 
-<div align=center><img src="./Figures/Figure3_Method_SpikeProperties.png" alt="Method_Spike" style="width:80%;"></div>
+<div align='center'><img src="./Figures/Figure3_Method_SpikeProperties.png" alt="Method_Spike" style="width:80%;"></div>
 
 1. **AP onset (mV).** The local minimal voltage before the peak occurs. The AP onset is marked as <span style="color:red">red rightward triangle </span> in the visualization panel.
 
@@ -328,18 +281,18 @@ There are another two checkboxes for the visualization:
 
 
 
-### 2.5.1. Advanced setting.
+### 2.5.1 Advanced setting.
 
 Click the `Options` button in the spike properties panel and this “advanced setting" window will open. This window is to modify the measurements on multiple spike properties. 
 
-2.5.1.1. [Spike threshold measurement methods](#2511-spike-threshold-measurement-methods)
-2.5.1.2. [Low-pass filter](#2512-low-pass-filter)
-2.5.1.1. [Half-width](#2513-half-width)
-2.5.1.1. [AP rise time and AP fall time](#2514-ap-rise-time-and-ap-fall-time)
+2.5.1.1 [Spike threshold measurement methods](#2511-spike-threshold-measurement-methods)<br>
+2.5.1.2 [Low-pass filter](#2512-low-pass-filter)<br>
+2.5.1.1 [Half-width](#2513-half-width)<br>
+2.5.1.1 [AP rise time and AP fall time](#2514-ap-rise-time-and-ap-fall-time)<br>
 
 <div align=center><img src="./Figures/panel_advanced.png" alt="panel_advanced" style="width:80%;"></div>
 
-#### 2.5.1.1. Spike threshold measurement methods
+#### 2.5.1.1 Spike threshold measurement methods
 
 Spike threshold is defined as the voltage at which the neuron initiates a spike. ElecFeX provides six commonly accepted way of quantifying the spike threshold, some of which are adopted from Sekerli, et. al., 2004<sup>[5](#Reference)</sup>. These methods are:
 
@@ -380,7 +333,6 @@ Type in the white textboxes to specify the percentage range.
 
 <div align='center'><img style="width:90%;margin:0px 20px 20px 20px" src="./Figures/method_SpikeProperties_edit.gif"></div>
 
-
 ## 2.6 Visualization
 
 The electrical properties are marked in the signals. You can get a direct impression on the measurement result, tuning the parameter settings that best-fit your data.
@@ -393,12 +345,8 @@ The electrical properties are marked in the signals. You can get a direct impres
 
 ---
 
-<p style="text-align:left;">
-    Previous: <a href=load_data.md>1. Load data files</a>
-    <span style="float:right;">
-      Next: <a href=batch_analysis.md>3. Batch analysis</a>
-    </span>
-</p>
+Next: [3. Batch analysis](batch_analysis.md)
+
 
 # Reference
 

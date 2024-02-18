@@ -1,17 +1,10 @@
 
-<p style="text-align:left;">
-    Previous: <a href=batch_analysis.md>3. Batch analysis</a>
-    <span style="float:right;">
-        Next: <a href=example_analysis.md>Example analysis on the ElecFeX’s output</a>
-    </span>
-</p>
+Previous: [3. Batch analysis](batch_analysis.md)
 
 ---
 
 # 4. Export data analysis
 <div align=center><img src="./Figures/gif_flycat.gif" alt="" style="width:1300px;height:170px;margin:0px 0px 0px -10px"></div>
-
-<img style="float: left; width:10%;margin:0px 10px 0px -30px" src="./Figures/gif_liecat.gif">
 
 This tutorial describes the result table from the batch analysis. You can copy/paste directly, or save the table for further analysis.
 
@@ -27,10 +20,4 @@ To export and save the table, click the `Save the table` button. A save dialog w
 
 ---
 
-<p style="text-align:left;">
-    Previous: <a href=batch_analysis.md>3. Batch analysis</a>
-    <span style="float:right;">
-        Next: <a href=example_analysis.md>Example analysis on the ElecFeX’s output</a>
-    </span>
-</p>
-
+Next: [Example analysis on the ElecFeX’s output](https://github.com/XinyueMa-neuro/ElecFeX-MaEtAl2024)
