@@ -9,6 +9,7 @@ There are two installation options given the accessibility of a licensed MATLAB:
 
 - [<b>Standalone desktop application</b>](#bulbto-install-elecfex-as-a-standalone-desktop-application): You don't need to have MATLAB installed not a Matlab licence. 
 
+- [<b>MATLAB Online</b>](#bulbto-install-elecfex-in-matlab-online) by clicking [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=XinyueMa-neuro/ElecFeX)
  <br>
 
 ---
@@ -91,5 +92,14 @@ You may need to allow the root user to access the running X server:
 1. Download and double click “../Installation/Standalone/ElecFeX_Installer_web.exe” and follow the instruction to installs ElecFeX. 
 2. In the terminal, type `./ElecFeX_Installer_web`
 You may need to enter an administrator username and password after you run `./ElecFeX_Installer_web.exe`.
+
+---
+
+## :bulb:To install ElecFeX in MATLAB Online
+
+1. By clicking [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=XinyueMa-neuro/ElecFeX), you will open this Git™ repositories directly in [MATLAB® Online™](https://www.mathworks.com/products/matlab-online/matlab-online-versions.html). MATLAB® Online™ enables you to access MATLAB in your browzer. You may need to register an MathWorks account.
+2. Once in MATLAB® Online™, select the folder 'AddsOn' and double-click "ElecFeX.mlappinstall" and a installation dialog will show.
+3. Once installed, open the app from the MATLAB® Online™ Toolbars “Apps”, dropdown and under ‘MY APPS’ click “ElecFeX” and the GUI will appear. 
+
 
 <br><br><br>
