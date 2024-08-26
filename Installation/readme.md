@@ -7,7 +7,7 @@ To download the package, you can input "https://github.com/XinyueMa-neuro/ElecFe
 There are two installation options given the accessibility of a licensed MATLAB:
 - [<b>Adds-on package to MATLAB</b>](#bulbto-install-elecfex-as-an-adds-on-package-into-matlab): If you have installed MATLAB, you can install ElecFeX as an adds-on toolbox into MATLAB. MATLAB R2022a is recommended as it has been tested in.
 
-- [<b>Standalone desktop application</b>](#bulbto-install-elecfex-as-a-standalone-desktop-application): You don't need to have MATLAB installed. 
+- [<b>Standalone desktop application</b>](#bulbto-install-elecfex-as-a-standalone-desktop-application): You don't need to have MATLAB installed not a Matlab licence. 
 
  <br>
 
@@ -67,15 +67,14 @@ A standalone desktop application doesn’t demand a licenced MATLAB installed in
 ### :arrow_forward: Installation steps
 **For Windows users:**
 
-1. Go to https://mcgill-my.sharepoint.com/:f:/g/personal/xinyue_ma_mail_mcgill_ca/EhKPMQ7N5atGvc4yw9JcKGcBTYxrdA4Gc5KHxQ7JAq3j8Q?e=kVDaI1 to download ElecFeXInstaller.exe. 
-2. Double-click the file “../Installation/Standalone/ElecFeXInstaller.exe” and follow the instruction to installs ElecFeX. 
-3. Once installed, go to the file installed location and find “../application/ElecFeX.exe” to run the application.
+1. Download and double click “../Installation/Standalone/ElecFeX_Installer_web.exe” and follow the instruction to installs ElecFeX. 
+2. Once installed, go to the file installed location and find “../application/ElecFeX.exe” to run the application.
 
 
 **For Linux users:**
 
-1. Go to https://mcgill-my.sharepoint.com/:f:/g/personal/xinyue_ma_mail_mcgill_ca/EhKPMQ7N5atGvc4yw9JcKGcBTYxrdA4Gc5KHxQ7JAq3j8Q?e=kVDaI1 to download ElecFeXInstaller.exe. 
-2. In the terminal, type: `sudo -H ./ElecFeXInstaller.install`
+1. Download and double click “../Installation/Standalone/ElecFeX_Installer_web.exe” and follow the instruction to installs ElecFeX. 
+2. In the terminal, type: `sudo -H ./ElecFeX_Installer_web.exe`
 You may need to allow the root user to access the running X server:
 > 
 >	`xhost +SI:localuser:root`
@@ -89,8 +88,8 @@ You may need to allow the root user to access the running X server:
 
 **For macOS users:**
 
-1. Go to https://mcgill-my.sharepoint.com/:f:/g/personal/xinyue_ma_mail_mcgill_ca/EhKPMQ7N5atGvc4yw9JcKGcBTYxrdA4Gc5KHxQ7JAq3j8Q?e=kVDaI1 to download ElecFeXInstaller.exe. 
-2. In the terminal, type `./ElecFeXInstaller`
-You may need to enter an administrator username and password after you run `./ElecFeXInstaller`.
+1. Download and double click “../Installation/Standalone/ElecFeX_Installer_web.exe” and follow the instruction to installs ElecFeX. 
+2. In the terminal, type `./ElecFeX_Installer_web`
+You may need to enter an administrator username and password after you run `./ElecFeX_Installer_web.exe`.
 
 <br><br><br>
