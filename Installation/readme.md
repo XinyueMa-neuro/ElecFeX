@@ -1,5 +1,10 @@
 # Installation
 
+source code download:
++ [release v1.1.0](https://github.com/XinyueMa-neuro/ElecFeX/archive/refs/tags/v1.1.0.zip)
+
+\
+\
 **Platform compatibility**: windows, Linux, macOS
 
 To download the package, you can input "https://github.com/XinyueMa-neuro/ElecFeX/tree/main/Installation/AddsOn" to [Download Directory](https://download-directory.github.io/) (Credits to [fregante](https://stackoverflow.com/users/288906/fregante)) and press 'Enter'.
